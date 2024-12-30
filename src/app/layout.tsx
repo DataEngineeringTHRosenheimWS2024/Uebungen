@@ -11,8 +11,8 @@ import { Intro } from "./_components/intro";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `Next.js Blog Example with ${CMS_NAME}`,
-  description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
+  title: "Docker & Kubernetes Blog",
+  description: "Ein statisch generiertes Blog-Beispiel mit Next.js über Docker und Kubernetes.",
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },

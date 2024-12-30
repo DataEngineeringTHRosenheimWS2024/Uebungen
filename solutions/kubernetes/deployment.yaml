@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blog-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: blog
+  template:
+    metadata:
+      labels:
+        app: blog
+    spec:
+      containers:
+      - name: blog
+        image: blog:latest  # Verwenden Sie den genauen Image-Namen
+        imagePullPolicy: Never  # Setzen Sie die imagePullPolicy auf Never
+        ports:
+        - containerPort: 3000

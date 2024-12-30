@@ -18,27 +18,31 @@ export default function Index() {
       <Container>
         <Intro />
 
-        <div className="mb-8 md:mb-10">
-          <h2 className="mb-8 text-3xl  font-bold tracking-tighter leading-tight">
+        <div className="mb-8 md:mb-10 p-6 shadow-lg border border-gray-200 rounded-lg bg-white">
+          <h2 className="mb-8 text-3xl font-bold tracking-tighter leading-tight">
             Ressourcen zur Vorlesung
           </h2>
-          <Link href={""}>
-            <div className="flex gap-4 leading-10 items-center  hover:text-blue-800">
-              <Presentation />
-              <p className="">
-                Präsentation
-              </p>
-            </div>
-          </Link>
+          <div className="flex justify-around">
 
-          <Link href={"https://inf-git.th-rosenheim.de/studhagejo5992/docker-demo-data-engineering"}>
-            <div className="flex gap-4 leading-10 items-center  hover:text-blue-800">
-              <Code />
-              <p className="">
-                Gitlab Repository
-              </p>
-            </div>
-          </Link>
+
+            <Link href={""}>
+              <div className="flex gap-4 leading-10 items-center hover:text-blue-800">
+                <Presentation />
+                <p className="">
+                  Präsentation
+                </p>
+              </div>
+            </Link>
+
+            <Link href={"https://inf-git.th-rosenheim.de/studhagejo5992/docker-demo-data-engineering"}>
+              <div className="flex gap-4 leading-10 items-center hover:text-blue-800">
+                <Code />
+                <p className="">
+                  Gitlab Repository
+                </p>
+              </div>
+            </Link>
+          </div>
         </div>
 
         {/* <HeroPost

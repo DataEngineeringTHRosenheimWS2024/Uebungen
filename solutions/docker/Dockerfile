@@ -1,4 +1,4 @@
-FROM node:22.12.0-alpine
+FROM node:20.10.0-alpine
 WORKDIR /app
 
 COPY package*.json ./
@@ -12,9 +12,6 @@ EXPOSE 3000
 # Set environment variable to listen on all interfaces
 ENV HOST=0.0.0.0
 ENV PORT=3000
-
-RUN npm install
-
 
 RUN npm run build
 

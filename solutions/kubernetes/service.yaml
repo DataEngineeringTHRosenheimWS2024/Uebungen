@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: blog-service
+spec:
+  selector:
+    app: blog
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000  # Zielport auf 3000 setzen
+      nodePort: 30080  # NodePort auf 30080 setzen
+  type: NodePort
