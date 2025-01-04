@@ -1,13 +1,13 @@
-apiVersion: v1
-kind: Service
+apiVersion: v1  # Die API-Version, die für den Service verwendet wird
+kind: Service  # Der Typ der Ressource, in diesem Fall ein Service
 metadata:
-  name: blog-service
+  name: blog-service  # Der Name des Services
 spec:
   selector:
-    app: blog
+    app: blog  # Label-Selector, um die Pods auszuwählen, die von diesem Service bedient werden
   ports:
-    - protocol: TCP
-      port: 3000
-      targetPort: 3000  # Zielport auf 3000 setzen
-      nodePort: 30080  # NodePort auf 30080 setzen
-  type: NodePort
+    - protocol: TCP  # Das verwendete Protokoll, in diesem Fall TCP
+      port: 3000  # Der Port, der vom Service exponiert wird
+      targetPort: 3000  # Der Zielport im Container
+      nodePort: 30080  # Der NodePort, der auf dem Host geöffnet wird
+  type: NodePort  # Der Typ des Services, in diesem Fall NodePort

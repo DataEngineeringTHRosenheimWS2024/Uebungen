@@ -1,19 +1,20 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: apps/v1  # Die API-Version, die für das Deployment verwendet wird
+kind: Deployment  # Der Typ der Ressource, in diesem Fall ein Deployment
 metadata:
-  name: blog-deployment
+  name: blog-deployment  # Der Name des Deployments
 spec:
-  replicas: 1
+  replicas: 3  # Die Anzahl der Replikate, die ständig laufen sollen
   selector:
     matchLabels:
-      app: blog
+      app: blog  # Label-Selector, um die Pods auszuwählen
   template:
     metadata:
       labels:
-        app: blog
+        app: blog  # Labels, die den Pods zugewiesen werden
     spec:
       containers:
-      - name: blog
-        image: docker-demo-data-engineering:latest
+      - name: blog  # Der Name des Containers
+        image: docker-demo-data-engineering:latest  # Das Docker-Image, das verwendet wird
+        imagePullPolicy: Never  # Die Image-Pull-Policy, in diesem Fall "Never"
         ports:
-        - containerPort: 3000
+        - containerPort: 3000  # Der Port, der im Container geöffnet wird
