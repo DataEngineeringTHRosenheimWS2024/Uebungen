@@ -14,7 +14,6 @@ spec:
     spec:
       containers:
       - name: blog
-        image: blog:latest  # Verwenden Sie den genauen Image-Namen
-        imagePullPolicy: Never  # Setzen Sie die imagePullPolicy auf Never
+        image: docker-demo-data-engineering:latest
         ports:
         - containerPort: 3000
