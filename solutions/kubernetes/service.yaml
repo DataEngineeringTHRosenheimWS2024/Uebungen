@@ -1,3 +1,7 @@
+# Dieser Service macht die Anwendung, die in den Pods läuft, über das Netzwerk zugänglich.
+# Um diesen Service mit kubectl auszuführen, verwenden Sie den Befehl:
+# kubectl apply -f service.yaml
+
 apiVersion: v1  # Die API-Version, die für den Service verwendet wird
 kind: Service  # Der Typ der Ressource, in diesem Fall ein Service
 metadata:

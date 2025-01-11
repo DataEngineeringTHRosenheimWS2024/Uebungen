@@ -1,21 +1,25 @@
+# Aufgaben zu Docker
+
 # Verwenden Sie das Node.js-Image in der Version 22.12.0 mit Alpine Linux als Basisimage
 # Images sind auf https://hub.docker.com/ verfügbar
-FROM node:22.12.0-alpine
 
-# Setzen Sie das Arbeitsverzeichnis im Container auf /app
-WORKDIR /app
+# 1. Wählen Sie das Node.js-Image in der Version 22.12.0-alpine
 
-# Kopieren Sie den Rest des Anwendungscodes in das Arbeitsverzeichnis
-COPY . .
 
-# Installieren Sie die Abhängigkeiten, wobei legacy-peer-deps verwendet wird
-RUN npm install --legacy-peer-deps
+# 2. Setzen Sie das Arbeitsverzeichnis im Container auf /app
 
-# Öffnen Sie Port 3000 für den Container
-EXPOSE 3000
 
-# Bauen Sie die Anwendung
-RUN npm run build
+# 3. Kopieren Sie den Anwendungscode in das Arbeitsverzeichnis
 
-# Starten Sie die Anwendung
-CMD ["npm", "start"]
+
+# 4. Installieren Sie die Abhängigkeiten mit dem Befehl "npm install --legacy-peer-deps"
+
+
+# 5. Öffnen Sie Port 3000 für den Container
+
+
+# 6. Bauen Sie die Anwendung mit dem Befehl "npm run build"
+
+
+# 7. Starten Sie die Anwendung mit dem Befehl "npm start"
+

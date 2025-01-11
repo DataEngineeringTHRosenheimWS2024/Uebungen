@@ -1,3 +1,7 @@
+# Dieses Deployment erstellt und verwaltet eine Gruppe von identischen Pods, um sicherzustellen, dass eine bestimmte Anzahl von ihnen immer läuft.
+# Um dieses Deployment mit kubectl auszuführen, verwenden Sie den Befehl:
+# kubectl apply -f deployment.yaml
+
 apiVersion: apps/v1  # Die API-Version, die für das Deployment verwendet wird
 kind: Deployment  # Der Typ der Ressource, in diesem Fall ein Deployment
 metadata:
