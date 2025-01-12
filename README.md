@@ -37,6 +37,50 @@ Dieses Projekt dient dazu, Docker und Kubernetes vorzustellen. Im Repository bef
 
 5. **Blog öffnen**: Öffne den Blog auf deinem Rechner unter [http://localhost:3000](http://localhost:3000).
 
+### Wissenswerte Docker-Befehle
+
+1. **Alle laufenden Container anzeigen**:
+
+   ```bash
+   docker ps
+   ```
+
+2. **Details zu einem bestimmten Container anzeigen**:
+
+   ```bash
+   docker inspect <container-id>
+   ```
+
+3. **Logs eines Containers anzeigen**:
+
+   ```bash
+   docker logs <container-id>
+   ```
+
+4. **Einen Container stoppen**:
+
+   ```bash
+   docker stop <container-id>
+   ```
+
+5. **Einen Container entfernen**:
+
+   ```bash
+   docker rm <container-id>
+   ```
+
+6. **Alle Images anzeigen**:
+
+   ```bash
+   docker images
+   ```
+
+7. **Ein Image entfernen**:
+
+   ```bash
+   docker rmi <image-id>
+   ```
+
 ### Kubernetes
 
 **Kubernetes Cluster mit Docker**: Führe den Blog als Kubernetes-Cluster auf deinem Computer aus.

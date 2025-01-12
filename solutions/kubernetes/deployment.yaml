@@ -7,7 +7,7 @@ kind: Deployment  # Der Typ der Ressource, in diesem Fall ein Deployment
 metadata:
   name: blog-deployment  # Der Name des Deployments
 spec:
-  replicas: 3  # Die Anzahl der Replikate, die ständig laufen sollen
+  replicas: 10  # Die Anzahl der Replikate, die ständig laufen sollen
   selector:
     matchLabels:
       app: blog  # Label-Selector, um die Pods auszuwählen, die zu diesem Deployment gehören
