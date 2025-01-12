@@ -11,7 +11,7 @@ spec:
     app: blog  # Label-Selector, um die Pods auszuwählen, die von diesem Service bedient werden
   ports:
     - protocol: TCP  # Das verwendete Protokoll, in diesem Fall TCP
-      port: 3000  # Der Port, der vom Service exponiert wird
-      targetPort: 3000  # Der Zielport im Container
-      nodePort: 30080  # Der NodePort, der auf dem Host geöffnet wird
-  type: NodePort  # Der Typ des Services, in diesem Fall NodePort
+      port: 3000  # Der Port, der vom Service exponiert wird (externer Port)
+      targetPort: 3000  # Der Zielport im Container, auf den der externe Port weitergeleitet wird
+      nodePort: 30080  # Der NodePort, der auf dem Host geöffnet wird, um den Service zugänglich zu machen
+  type: NodePort  # Der Typ des Services, in diesem Fall NodePort, um den Service über einen bestimmten Port auf dem Host zugänglich zu machen

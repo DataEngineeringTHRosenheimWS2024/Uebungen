@@ -10,15 +10,15 @@ spec:
   replicas: 3  # Die Anzahl der Replikate, die ständig laufen sollen
   selector:
     matchLabels:
-      app: blog  # Label-Selector, um die Pods auszuwählen
+      app: blog  # Label-Selector, um die Pods auszuwählen, die zu diesem Deployment gehören
   template:
     metadata:
       labels:
-        app: blog  # Labels, die den Pods zugewiesen werden
+        app: blog  # Labels, die den Pods zugewiesen werden, die von diesem Deployment erstellt werden
     spec:
       containers:
       - name: blog  # Der Name des Containers
         image: docker-demo-data-engineering:latest  # Das Docker-Image, das verwendet wird
-        imagePullPolicy: Never  # Die Image-Pull-Policy, in diesem Fall "Never"
+        imagePullPolicy: Never  # Die Image-Pull-Policy, in diesem Fall "Never", um das Image nicht erneut herunterzuladen
         ports:
         - containerPort: 3000  # Der Port, der im Container geöffnet wird
