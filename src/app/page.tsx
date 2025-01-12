@@ -34,11 +34,11 @@ export default function Index() {
               </div>
             </Link>
 
-            <Link href={"https://inf-git.th-rosenheim.de/studhagejo5992/docker-demo-data-engineering"}>
+            <Link href={"https://github.com/iamhagen/docker-demo-data-engineering"}>
               <div className="flex gap-4 leading-10 items-center hover:text-blue-800">
                 <Code />
                 <p className="">
-                  Gitlab Repository
+                  Repository Codeprojekt
                 </p>
               </div>
             </Link>
