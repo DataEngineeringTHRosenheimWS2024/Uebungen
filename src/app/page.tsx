@@ -22,7 +22,7 @@ export default function Index() {
           <h2 className="mb-8 text-3xl font-bold tracking-tighter leading-tight">
             Ressourcen zur Vorlesung
           </h2>
-          <div className="flex justify-around">
+          <div className="flex justify-around flex-col">
 
 
             <Link href={""}>
@@ -34,11 +34,21 @@ export default function Index() {
               </div>
             </Link>
 
-            <Link href={"https://github.com/iamhagen/docker-demo-data-engineering"}>
+            <Link href={"https://github.com/DataEngineeringTHRosenheimWS2024/Unterlagen"}>
               <div className="flex gap-4 leading-10 items-center hover:text-blue-800">
                 <Code />
                 <p className="">
-                  Repository Codeprojekt
+
+                  Unterlagen zur Vorlesung
+                </p>
+              </div>
+            </Link>
+
+            <Link href={"https://github.com/DataEngineeringTHRosenheimWS2024/Uebungen"}>
+              <div className="flex gap-4 leading-10 items-center hover:text-blue-800">
+                <Code />
+                <p className="">
+                  Codeprojekt Docker / Kubernetes Blog
                 </p>
               </div>
             </Link>

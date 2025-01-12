@@ -15,7 +15,7 @@ Dieses Projekt dient dazu, Docker und Kubernetes vorzustellen. Im Repository bef
 1. **Repository klonen**: Klone das Repository auf deinen Computer.
 
    ```bash
-   git clone https://github.com/iamhagen/docker-demo-data-engineering.git
+   git clone https://github.com/DataEngineeringTHRosenheimWS2024/Uebungen
    cd docker-demo-data-engineering
    ```
 
