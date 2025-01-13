@@ -24,16 +24,6 @@ export default function Index() {
           </h2>
           <div className="flex justify-around flex-col">
 
-
-            <Link href={""}>
-              <div className="flex gap-4 leading-10 items-center hover:text-blue-800">
-                <Presentation />
-                <p className="">
-                  Präsentation
-                </p>
-              </div>
-            </Link>
-
             <Link href={"https://github.com/DataEngineeringTHRosenheimWS2024/Unterlagen"}>
               <div className="flex gap-4 leading-10 items-center hover:text-blue-800">
                 <Code />
